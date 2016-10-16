@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:text="Add Plain or Encrypted text below:"
+                android:textColor="#555555"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="150sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:background="@drawable/bg_et_enrypt"
+                android:gravity="top|left"
+                android:hint="Add plain or encrypted text here"
+                android:padding="5sp"
+                android:textSize="12sp"
+                android:id="@+id/et_encrypt"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:text="128 Bit Key Only:"
+                android:textColor="#555555"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:background="@drawable/bg_et_enrypt"
+                android:gravity="top|left"
+                android:hint="Enter 128 bit key here"
+                android:text="A1zFlux77a99X1be"
+                android:padding="5sp"
+                android:textSize="12sp"
+                android:id="@+id/et_key"
+                />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_margin="10sp"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dialog"
+                android:id="@+id/spinner_bit"
+                >
+
+            </Spinner>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10sp"
+                android:gravity="right"
+                >
+
+                <Button
+                    android:id="@+id/butt_decrypt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Decrypt"
+                    />
+
+                <Button
+                    android:id="@+id/butt_encrypt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Encrypt"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
